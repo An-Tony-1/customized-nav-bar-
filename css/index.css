@@ -1,0 +1,147 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+	min-height: 100vh;
+	background: #bcc1cf;
+}
+
+/*Side Nav bar Begins*/
+.Sidebar{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 85px;
+	height: 100%;
+	display: flex;
+	background: #161a2d;
+	flex-direction: column;
+	overflow-x: hidden;
+	padding: 25px 20px;
+	transition: all 0.4 ease;
+}
+
+.Sidebar:hover{
+	width: 260px;
+}
+
+.Sidebar .Side-Header img {
+	border-radius: 30%;
+	width: 50px;
+}
+
+.Sidebar .Side-Header {
+	align-items: center;
+	display: flex;
+}
+
+.Sidebar .Side-Header h2 {
+	color: #fff;
+	font-weight: 600;
+	font-size: 1.25rem;
+	margin-left: 23px;
+	white-space: nowrap;
+}
+
+.Sidebar-links h4 {
+	color: #fff;
+	white-space: nowrap;
+	font-weight: 500;
+	position: relative;
+	margin: 10px 0;
+}
+
+.Sidebar-links h4 span {
+	opacity: 0;
+
+}
+
+.Sidebar:hover .Sidebar-links h4 span{
+	opacity: 1;
+}
+
+.Sidebar-links .menu-seperator{
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	left: 0;
+	height: 1px;
+	transform: translateY(-50%);
+	transform: scale(1);
+	transition: 0.4s;
+	transform-origin: right;
+}
+
+.Sidebar:hover .Sidebar-links .menu-seperator{
+	transform: scaleX(0);
+	transition-delay: 0s;
+}
+
+.Sidebar-links{
+	list-style: none;
+	height: 80%;
+	margin-top: 20px;
+	scrollbar-width: none;
+	overflow-y: auto;
+}
+
+.Sidebar-links::-webkit-scrollbar{
+	display: none;
+}
+
+.Sidebar-links li a {
+	display: flex;
+	align-items: center;
+	color: black;
+	gap: 0 20px;
+	white-space: nowrap;
+	padding: 15px 10px;
+	font-weight: 500;
+	text-decoration: none;
+	transition: 0.3s ease;
+	background-color: #bcc1cf;
+}
+
+.Sidebar-links li a:hover{
+ 	color: darkred;
+ 	border-radius: 4px;
+ 	background: transparent;
+ }
+
+ .user-account{
+ 	padding: 2px 10px;
+ 	margin-top: auto;
+ 	margin-left: -10px;
+ }
+
+ .user-profile{
+ 	align-items: center;
+ 	display: flex;
+ 	color: #161a2d;
+ }
+
+.user-profile img {
+	border: 2px solid #fff;
+	width: 50px;
+	border-radius: 40%;
+}
+
+.user-profile h3 {
+	font-weight: 600;
+	font-size: 0,775rem;
+	color: #bcc1cf;
+}
+
+.user-detail{
+	margin-left: 23px;
+	white-space: nowrap;
+}
+
+.Sidebar:hover .user-account {
+	background: transparent;
+	border-radius: 4px;
+}
+/*Side Nav bar End*/
